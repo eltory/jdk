@@ -734,8 +734,7 @@ public class LinkedList<E>
      * @since 1.6
      */
     public E peekFirst() {
-        final Node<E> f = first;
-        return (f == null) ? null : f.item;
+        return peek();
      }
 
     /**
@@ -760,8 +759,7 @@ public class LinkedList<E>
      * @since 1.6
      */
     public E pollFirst() {
-        final Node<E> f = first;
-        return (f == null) ? null : unlinkFirst(f);
+        return poll();
     }
 
     /**
